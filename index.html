@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invisible Research Theory (IRT) | Kallol Chakrabarti</title>
+<meta name="description" content="Invisible Research Theory (IRT) by Kallol Chakrabarti — a conceptual framework for the knowledge humanity creates every day but never files: observation, experience, combination, and imagination operating outside formal institutions.">
+<meta name="author" content="Kallol Chakrabarti">
+<meta name="keywords" content="Invisible Research Theory, independent research, tacit knowledge, grassroots innovation, recognition gap, knowledge creation, informal expertise, citizen science, practical intelligence">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is Invisible Research Theory?","acceptedAnswer":{"@type":"Answer","text":"A conceptual framework proposing that a large, parallel system of knowledge creation happens outside formal institutions through lived experience, experimentation, and problem-solving, and stays mostly undocumented and unrecognized."}},
+    {"@type":"Question","name":"Can anyone be a researcher?","acceptedAnswer":{"@type":"Answer","text":"Functionally, yes. Anyone who systematically observes, tries something, and adjusts based on the outcome is doing the basic mechanics of research."}},
+    {"@type":"Question","name":"Can you do research without a degree?","acceptedAnswer":{"@type":"Answer","text":"Yes. Research is a method of inquiry, not a location. Independent scholars, artisans, and practitioners have produced real discoveries outside academia throughout history."}},
+    {"@type":"Question","name":"What is tacit knowledge?","acceptedAnswer":{"@type":"Answer","text":"Knowledge that is difficult to transfer to another person by writing it down or verbalizing it, often gained through personal experience and practice."}},
+    {"@type":"Question","name":"Where do ideas come from?","acceptedAnswer":{"@type":"Answer","text":"Knowledge Origin Theory traces every idea to observation, experience, combination of existing concepts, or imagination — often several at once."}}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0B0D0A;
+  --panel:#11140F;
+  --panel-2:#161A13;
+  --line:#2B3127;
+  --paper:#EDE8DA;
+  --paper-dim:#A7AB9C;
+  --moss:#8FB28E;
+  --moss-dim:#5F7860;
+  --amber:#CDA86E;
+  --rust:#C97155;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Source Sans 3', -apple-system, Segoe UI, sans-serif;
+  --mono:'JetBrains Mono', monospace;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--sans);
+  line-height:1.65;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+}
+
+body::before{
+  content:'';
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(transparent 0 27px, rgba(255,255,255,0.018) 27px 28px),
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(143,178,142,0.06), transparent 60%);
+}
+
+a{color:var(--moss)}
+:focus-visible{outline:2px solid var(--moss); outline-offset:3px}
+
+.skip-link{position:absolute;top:-40px;left:0;background:var(--moss);color:var(--ink);padding:.5rem 1rem;z-index:10000;font-weight:600;text-decoration:none}
+.skip-link:focus{top:0}
+
+h1,h2,h3,h4{font-family:var(--serif);color:var(--paper);font-weight:600;letter-spacing:-0.01em;line-height:1.15}
+h1{font-size:clamp(2.4rem,6vw,4.6rem); font-weight:500}
+h2{font-size:clamp(1.9rem,4vw,3rem)}
+h3{font-size:clamp(1.2rem,2vw,1.5rem)}
+.lede{font-size:clamp(1.05rem,1.4vw,1.25rem); color:var(--paper-dim); font-weight:300; font-family:var(--serif); font-style:italic}
+p{color:var(--paper-dim)}
+
+.tag{
+  font-family:var(--mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--amber); border:1px solid rgba(205,168,110,0.35); border-radius:3px;
+  padding:0.25rem 0.6rem; display:inline-block;
+}
+
+.wrap{max-width:1180px; margin:0 auto; padding:0 1.75rem; position:relative; z-index:1}
+section{padding:6rem 0; border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+
+nav{
+  position:fixed; top:0; left:0; width:100%; z-index:1000;
+  background:rgba(11,13,10,0.86); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{max-width:1180px; margin:0 auto; padding:0 1.75rem; height:64px; display:flex; align-items:center; justify-content:space-between}
+.brand{font-family:var(--serif); font-weight:600; font-size:1.05rem; color:var(--paper); text-decoration:none; letter-spacing:0.02em}
+.brand .dot{color:var(--moss)}
+.nav-links{display:flex; gap:1.75rem; list-style:none}
+.nav-links a{font-family:var(--mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--paper-dim); text-decoration:none; transition:color .2s}
+.nav-links a:hover{color:var(--moss)}
+.nav-toggle{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:.5rem}
+.nav-toggle span{width:22px; height:1.5px; background:var(--paper)}
+@media(max-width:860px){
+  .nav-links{position:absolute; top:64px; left:0; right:0; flex-direction:column; gap:0; background:var(--ink); border-bottom:1px solid var(--line); display:none; padding:.5rem 0}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:0.9rem 1.75rem; display:block; border-top:1px solid var(--line)}
+  .nav-toggle{display:flex}
+}
+
+#hero{
+  min-height:100vh; display:flex; flex-direction:column; justify-content:center;
+  padding-top:64px; border-bottom:1px solid var(--line); position:relative; overflow:hidden;
+}
+.hero-grid{
+  display:grid; grid-template-columns:1fr; gap:3rem; align-items:start;
+}
+.hero-eyebrow{
+  font-family:var(--mono); font-size:0.78rem; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--moss); margin-bottom:1.5rem; opacity:0; animation:rise .8s ease forwards .1s;
+  display:flex; align-items:center; gap:0.75rem;
+}
+.hero-eyebrow::before{content:''; width:28px; height:1px; background:var(--moss)}
+.hero h1{margin-bottom:1.5rem; max-width:14ch; opacity:0; animation:rise .8s ease forwards .25s}
+.hero h1 em{font-style:italic; color:var(--moss)}
+.hero .lede{max-width:46ch; margin-bottom:2.5rem; opacity:0; animation:rise .8s ease forwards .4s}
+.hero-buttons{display:flex; gap:1rem; flex-wrap:wrap; opacity:0; animation:rise .8s ease forwards .55s}
+@keyframes rise{from{opacity:0; transform:translateY(18px)} to{opacity:1; transform:translateY(0)}}
+
+.btn{
+  font-family:var(--mono); font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase;
+  padding:0.85rem 1.6rem; border-radius:3px; text-decoration:none; transition:all .25s ease; cursor:pointer; border:1px solid;
+}
+.btn-primary{background:var(--moss); color:var(--ink); border-color:var(--moss); font-weight:600}
+.btn-primary:hover{background:var(--paper); border-color:var(--paper); transform:translateY(-2px)}
+.btn-secondary{background:transparent; color:var(--paper); border-color:var(--line)}
+.btn-secondary:hover{border-color:var(--moss); color:var(--moss)}
+
+.ledger-preview{
+  margin-top:4rem; display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  border:1px solid var(--line); border-radius:4px; overflow:hidden;
+  opacity:0; animation:rise .8s ease forwards .7s;
+}
+.ledger-preview .lp-cell{
+  padding:1.1rem 1.2rem; border-right:1px solid var(--line); position:relative;
+}
+.ledger-preview .lp-cell:last-child{border-right:none}
+.ledger-preview .lp-num{font-family:var(--mono); font-size:0.7rem; color:var(--amber); display:block; margin-bottom:0.4rem}
+.ledger-preview .lp-label{font-family:var(--serif); font-size:1rem; color:var(--paper)}
+@media(max-width:760px){.ledger-preview{grid-template-columns:1fr 1fr}}
+
+.section-head{max-width:680px; margin-bottom:3.5rem}
+.section-head .tag{margin-bottom:1rem}
+.section-head h2{margin-top:0.75rem}
+.section-head p{margin-top:1rem}
+
+.q-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--line); border-radius:4px; overflow:hidden}
+@media(max-width:760px){.q-grid{grid-template-columns:1fr}}
+.q-item{
+  padding:2rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  position:relative; transition:background .25s;
+}
+.q-item:hover{background:var(--panel)}
+.q-item:nth-child(2n){border-right:none}
+.q-item:nth-child(2n-1){border-right:1px solid var(--line)}
+@media(max-width:760px){.q-item{border-right:none !important}}
+.q-grid .q-item:last-child, .q-grid .q-item:nth-last-child(2):nth-child(odd){border-bottom:none}
+.q-num{font-family:var(--mono); font-size:0.75rem; color:var(--moss-dim); display:block; margin-bottom:0.85rem}
+.q-item h3{font-size:1.05rem; font-weight:500; color:var(--paper)}
+
+.compare{display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2.5rem}
+@media(max-width:760px){.compare{grid-template-columns:1fr}}
+.compare-card{border:1px solid var(--line); border-radius:4px; padding:2.25rem; position:relative}
+.compare-card.filed{background:var(--panel)}
+.compare-card.field{background:var(--panel-2); border-color:rgba(143,178,142,0.25)}
+.compare-card .stamp{
+  font-family:var(--mono); font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase;
+  padding:0.3rem 0.7rem; border:1px solid; border-radius:3px; margin-bottom:1.25rem; display:inline-block;
+}
+.compare-card.filed .stamp{color:var(--amber); border-color:rgba(205,168,110,0.4)}
+.compare-card.field .stamp{color:var(--moss); border-color:rgba(143,178,142,0.4)}
+.compare-card h3{margin-bottom:0.85rem}
+.compare-card ul{list-style:none; margin-top:1.25rem; display:flex; flex-direction:column; gap:0.6rem}
+.compare-card li{font-size:0.92rem; color:var(--paper-dim); padding-left:1.1rem; position:relative}
+.compare-card.filed li::before{content:'▸'; position:absolute; left:0; color:var(--amber)}
+.compare-card.field li::before{content:'▸'; position:absolute; left:0; color:var(--moss)}
+
+/* Historical cases */
+.history-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:2.5rem}
+@media(max-width:760px){.history-grid{grid-template-columns:1fr}}
+.history-card{border:1px solid var(--line); border-radius:4px; padding:2rem; background:var(--panel); transition:border-color .25s, transform .25s}
+.history-card:hover{border-color:var(--moss-dim); transform:translateY(-3px)}
+.history-card .hc-era{font-family:var(--mono); font-size:0.7rem; color:var(--amber); letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.6rem}
+.history-card h3{font-size:1.1rem; margin-bottom:0.6rem}
+.history-card .hc-type{font-family:var(--serif); font-style:italic; color:var(--moss); font-size:0.9rem; margin-bottom:0.8rem; display:block}
+.history-card p{font-size:0.9rem; margin-bottom:0.5rem}
+.history-card .hc-support{font-size:0.82rem; color:var(--paper-dim); border-top:1px solid var(--line); padding-top:0.8rem; margin-top:0.8rem}
+
+.cycle-wrap{margin-top:3rem; position:relative}
+.cycle-track{display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--line); border-radius:4px; overflow:hidden}
+.cycle-step{
+  flex:1 1 150px; padding:1.6rem 1.4rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  position:relative; transition:background .25s, color .25s;
+}
+.cycle-step:last-child{border-right:none}
+.cycle-step:hover{background:rgba(143,178,142,0.06)}
+.cycle-step .cs-tag{font-family:var(--mono); font-size:0.68rem; color:var(--moss-dim); display:block; margin-bottom:0.5rem}
+.cycle-step h4{font-size:1rem; font-weight:500; color:var(--paper); margin-bottom:0.4rem}
+.cycle-step p{font-size:0.85rem; margin-bottom:0}
+.cycle-loop-note{
+  margin-top:1.25rem; font-family:var(--mono); font-size:0.78rem; color:var(--moss-dim);
+  display:flex; align-items:center; gap:0.6rem;
+}
+.cycle-loop-note::before, .cycle-loop-note::after{content:''; flex:1; height:1px; background:var(--line)}
+
+.systems{display:grid; grid-template-columns:1fr auto 1fr; gap:0; align-items:stretch; margin-top:3rem; border:1px solid var(--line); border-radius:4px; overflow:hidden}
+@media(max-width:760px){.systems{grid-template-columns:1fr}}
+.system-col{padding:2.25rem}
+.system-col.formal{background:var(--panel)}
+.system-col.informal{background:var(--panel-2)}
+.system-col h3{margin-bottom:0.4rem}
+.system-col .sub{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--paper-dim); margin-bottom:1.5rem; display:block}
+.system-col ul{list-style:none; display:flex; flex-direction:column; gap:0.55rem}
+.system-col li{font-size:0.92rem; color:var(--paper-dim); padding-left:1.2rem; position:relative}
+.system-col.formal li::before{content:'—'; position:absolute; left:0; color:var(--amber)}
+.system-col.informal li::before{content:'—'; position:absolute; left:0; color:var(--moss)}
+.system-mid{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.75rem;
+  padding:1.5rem; border-left:1px solid var(--line); border-right:1px solid var(--line);
+  background:var(--ink); min-width:64px;
+}
+@media(max-width:760px){.system-mid{border-left:none; border-right:none; border-top:1px solid var(--line); border-bottom:1px solid var(--line); flex-direction:row; min-width:0}}
+.system-mid .arrow{font-size:1.3rem; color:var(--moss); animation:swap 3s ease-in-out infinite}
+.system-mid .arrow:nth-child(2){animation-delay:1.5s}
+@keyframes swap{0%,100%{opacity:0.25} 50%{opacity:1}}
+.system-mid span.label{font-family:var(--mono); font-size:0.65rem; color:var(--paper-dim); text-align:center; writing-mode:horizontal-tb}
+.synthesis{margin-top:1.5rem; border:1px solid var(--line); border-radius:4px; padding:1.75rem; background:var(--panel)}
+.synthesis p{margin-bottom:0; color:var(--paper)}
+.synthesis strong{color:var(--moss); font-weight:600}
+
+.gap-meter{margin-top:2.5rem; border:1px solid var(--line); border-radius:4px; padding:2rem; background:var(--panel)}
+.gap-row{display:flex; align-items:center; gap:1rem; margin-bottom:0.6rem}
+.gap-row:last-child{margin-bottom:0}
+.gap-row .gap-name{font-family:var(--mono); font-size:0.78rem; color:var(--paper-dim); width:170px; flex-shrink:0}
+.gap-row .gap-bar-bg{flex:1; height:8px; background:var(--line); border-radius:2px; overflow:hidden; position:relative}
+.gap-row .gap-bar{height:100%; background:var(--moss); border-radius:2px; transition:width 1.2s ease}
+.gap-row .gap-bar.created{background:var(--moss)}
+.gap-row .gap-bar.ack{background:var(--amber)}
+.gap-legend{display:flex; gap:1.5rem; margin-top:1.5rem; font-family:var(--mono); font-size:0.75rem; color:var(--paper-dim)}
+.gap-legend span{display:flex; align-items:center; gap:0.5rem}
+.gap-legend .sw{width:12px; height:12px; border-radius:2px; display:inline-block}
+.sw.created{background:var(--moss)}
+.sw.ack{background:var(--amber)}
+
+.gap-cases{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1.25rem; margin-top:1.5rem}
+.gap-case{border:1px solid var(--line); border-radius:4px; padding:1.5rem; transition:border-color .25s, transform .25s}
+.gap-case:hover{border-color:var(--moss-dim); transform:translateY(-3px)}
+.gap-case .gc-icon{font-family:var(--serif); font-style:italic; color:var(--moss); font-size:1.3rem; margin-bottom:0.6rem; display:block}
+.gap-case h4{font-size:0.98rem; margin-bottom:0.4rem}
+.gap-case p{font-size:0.85rem; margin-bottom:0}
+
+.split-cards{display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2.5rem}
+@media(max-width:760px){.split-cards{grid-template-columns:1fr}}
+.split-card{border:1px solid var(--line); border-radius:4px; padding:2.25rem}
+.split-card.old{opacity:0.7}
+.split-card.new{border-color:rgba(143,178,142,0.3); background:var(--panel-2)}
+.split-card .sc-label{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--paper-dim); margin-bottom:1rem; display:block}
+.split-card.new .sc-label{color:var(--moss)}
+.split-card .sc-def{font-family:var(--serif); font-style:italic; font-size:1.15rem; color:var(--paper); margin-bottom:0}
+
+.role-row{display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:2rem}
+.role-chip{
+  font-family:var(--mono); font-size:0.8rem; color:var(--paper-dim); border:1px solid var(--line);
+  border-radius:50px; padding:0.5rem 1.1rem; transition:all .25s;
+}
+.role-chip:hover{border-color:var(--moss); color:var(--moss)}
+
+.ledger-table{width:100%; border-collapse:collapse; margin-top:2.5rem; font-size:0.92rem}
+.ledger-table caption{text-align:left; font-family:var(--mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--paper-dim); margin-bottom:0.75rem}
+.ledger-table th,.ledger-table td{padding:1rem 1.25rem; text-align:left; border-bottom:1px solid var(--line)}
+.ledger-table thead th{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--moss); border-bottom:1px solid var(--line); font-weight:500}
+.ledger-table tbody tr:hover{background:var(--panel)}
+.ledger-table td:first-child{color:var(--paper); font-weight:500; white-space:nowrap}
+.mark-yes{color:var(--moss); font-weight:700}
+.mark-no{color:var(--paper-dim); opacity:0.4}
+.mark-partial{color:var(--amber); font-weight:700}
+
+.origin-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:0; border:1px solid var(--line); border-radius:4px; overflow:hidden; margin-top:2.5rem}
+@media(max-width:760px){.origin-grid{grid-template-columns:1fr}}
+.origin-card{
+  padding:2.25rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  position:relative; cursor:default; transition:background .25s;
+}
+.origin-card:nth-child(2n){border-right:none}
+.origin-card:nth-child(3),.origin-card:nth-child(4){border-bottom:none}
+@media(max-width:760px){.origin-card{border-right:none !important}.origin-card:nth-child(n){border-bottom:1px solid var(--line)}.origin-grid .origin-card:last-child{border-bottom:none}}
+.origin-card:hover{background:var(--panel)}
+.origin-card .o-tag{font-family:var(--mono); font-size:0.75rem; color:var(--amber); display:block; margin-bottom:0.85rem}
+.origin-card h3{margin-bottom:0.6rem}
+.origin-card .o-example{font-family:var(--serif); font-style:italic; color:var(--moss); font-size:0.95rem; margin-top:1rem; margin-bottom:0}
+
+.readings{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.25rem; margin-top:2.5rem}
+.reading-card{border:1px solid var(--line); border-radius:4px; padding:1.75rem; text-align:left}
+.reading-card .rc-figure{font-family:var(--serif); font-size:1.8rem; color:var(--moss); display:block; margin-bottom:0.5rem; font-style:italic}
+.reading-card .rc-label{font-size:0.92rem; color:var(--paper); display:block; font-weight:500}
+.reading-card .rc-note{font-size:0.82rem; color:var(--paper-dim); margin-top:0.5rem; margin-bottom:0}
+
+.field-notes{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.25rem; margin-top:1.5rem}
+.field-note{border-left:2px solid var(--line); padding-left:1.25rem}
+.field-note h4{font-size:1rem; margin-bottom:0.4rem; color:var(--paper)}
+.field-note p{font-size:0.88rem; margin-bottom:0}
+
+.marginalia{display:flex; flex-direction:column; gap:0; margin-top:2.5rem}
+.margin-line{
+  padding:1.75rem 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:auto 1fr; gap:1.5rem; align-items:baseline;
+}
+.marginalia .margin-line:last-child{border-bottom:none}
+.margin-line .ml-mark{font-family:var(--mono); font-size:0.75rem; color:var(--moss-dim); padding-top:0.3rem}
+.margin-line p{font-family:var(--serif); font-size:clamp(1.1rem,2.4vw,1.55rem); color:var(--paper); font-weight:300; line-height:1.4; margin-bottom:0}
+.margin-line em{color:var(--moss); font-style:italic}
+
+.original-list{margin-top:2.5rem; border:1px solid var(--line); border-radius:4px}
+.original-item{display:grid; grid-template-columns:64px 1fr; gap:1.5rem; padding:1.75rem; border-bottom:1px solid var(--line)}
+.original-item:last-child{border-bottom:none}
+.original-item .oi-num{font-family:var(--serif); font-style:italic; font-size:1.8rem; color:var(--moss-dim)}
+.original-item h4{margin-bottom:0.35rem; font-size:1.05rem}
+.original-item p{font-size:0.92rem; margin-bottom:0}
+
+.app-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0; border:1px solid var(--line); border-radius:4px; overflow:hidden; margin-top:2.5rem}
+.app-cell{padding:1.75rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line); transition:background .2s}
+.app-cell:hover{background:var(--panel)}
+.app-cell .ac-tag{font-family:var(--mono); font-size:0.68rem; color:var(--moss-dim); display:block; margin-bottom:0.6rem}
+.app-cell h4{font-size:0.98rem; margin-bottom:0.4rem}
+.app-cell p{font-size:0.85rem; margin-bottom:0}
+
+.faq-list{margin-top:2.5rem; border:1px solid var(--line); border-radius:4px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{
+  width:100%; text-align:left; background:none; border:none; color:var(--paper);
+  padding:1.5rem 1.75rem; font-family:var(--serif); font-size:1.05rem; cursor:pointer;
+  display:flex; justify-content:space-between; align-items:center; gap:1rem; transition:color .2s;
+}
+.faq-q:hover{color:var(--moss)}
+.faq-q .fq-mark{font-family:var(--mono); color:var(--moss); flex-shrink:0; transition:transform .25s}
+.faq-item.open .fq-mark{transform:rotate(45deg)}
+.faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease}
+.faq-a p{padding:0 1.75rem 1.5rem; font-size:0.94rem; margin-bottom:0}
+
+/* Test checklist */
+.test-checklist{margin-top:2.5rem; border:1px solid var(--line); border-radius:4px; padding:2.5rem; background:var(--panel)}
+.test-list{list-style:none; display:flex; flex-direction:column; gap:0.8rem}
+.test-list li{font-size:1rem; color:var(--paper-dim); padding-left:2rem; position:relative; line-height:1.5}
+.test-list li::before{content:'✓'; position:absolute; left:0; color:var(--moss); font-weight:700; font-size:1.1rem}
+.test-reveal{margin-top:2rem; padding-top:2rem; border-top:1px solid var(--line); font-family:var(--serif); font-style:italic; font-size:clamp(1.1rem,2vw,1.35rem); color:var(--moss); line-height:1.5}
+
+/* Phenomena table */
+.phenomena-table{width:100%; border-collapse:collapse; margin-top:2.5rem; font-size:0.92rem}
+.phenomena-table th,.phenomena-table td{padding:1.2rem 1.5rem; text-align:left; border-bottom:1px solid var(--line)}
+.phenomena-table thead th{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--moss); border-bottom:1px solid var(--line); font-weight:500}
+.phenomena-table tbody tr:hover{background:var(--panel)}
+.phenomena-table td:first-child{color:var(--paper); font-weight:500}
+@media(max-width:600px){.phenomena-table{font-size:0.82rem}.phenomena-table th,.phenomena-table td{padding:0.8rem}}
+
+.roadmap{margin-top:2.5rem; display:flex; flex-direction:column; gap:0}
+.road-item{display:grid; grid-template-columns:140px 1fr; gap:1.5rem; padding:1.75rem 0; border-bottom:1px solid var(--line)}
+.roadmap .road-item:last-child{border-bottom:none}
+.road-item .ri-tag{font-family:var(--mono); font-size:0.72rem; color:var(--amber); align-self:start; padding-top:0.2rem}
+.road-item h4{margin-bottom:0.4rem}
+.road-item p{font-size:0.92rem; margin-bottom:0}
+@media(max-width:600px){.road-item{grid-template-columns:1fr; gap:0.5rem}}
+
+#author .author-card{
+  border:1px solid var(--line); border-radius:4px; padding:3rem; max-width:760px; margin:2.5rem auto 0;
+  text-align:center; background:var(--panel);
+}
+.author-mark{
+  width:88px; height:88px; border-radius:50%; margin:0 auto 1.5rem; border:1px solid var(--moss-dim);
+  display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-style:italic; font-size:2rem; color:var(--moss);
+}
+.author-card h3{margin-bottom:0.3rem}
+.author-card .role{font-family:var(--mono); font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--amber); display:block; margin-bottom:1.5rem}
+.author-works{display:flex; flex-wrap:wrap; justify-content:center; gap:0.6rem; margin-top:1.75rem}
+.author-works span{font-family:var(--mono); font-size:0.75rem; color:var(--moss); border:1px solid rgba(143,178,142,0.3); border-radius:50px; padding:0.4rem 1rem}
+
+footer{padding:4rem 0 2.5rem; border-top:1px solid var(--line)}
+.footer-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2.5rem; margin-bottom:3rem}
+.footer-col h4{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--moss); margin-bottom:1.1rem; font-weight:500}
+.footer-col ul{list-style:none; display:flex; flex-direction:column; gap:0.55rem}
+.footer-col a{color:var(--paper-dim); text-decoration:none; font-size:0.88rem; transition:color .2s}
+.footer-col a:hover{color:var(--moss)}
+.footer-bottom{border-top:1px solid var(--line); padding-top:2rem; text-align:center}
+.footer-bottom p{font-size:0.82rem; margin-bottom:0.4rem}
+.footer-credit{font-family:var(--serif); font-style:italic; color:var(--moss); font-size:1rem !important; margin-top:0.75rem !important}
+
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease}
+.reveal.active{opacity:1; transform:translateY(0)}
+
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--line); border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--moss-dim)}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="brand">IRT<span class="dot">·</span>Field Ledger</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#discovery">Discovery</a></li>
+      <li><a href="#ecosystem">Ecosystem</a></li>
+      <li><a href="#recognition">Recognition Gap</a></li>
+      <li><a href="#origins">Origins</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#author">Author</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">Invisible Research Theory — Field Edition</div>
+          <h1>The knowledge humanity makes <em>every day</em> and never files.</h1>
+          <p class="lede">"What if the world's largest research network has no campus, no headquarters, and no official membership?" Billions of people observe, test, fail, fix, and learn daily — almost none of it is ever logged as research.</p>
+          <div class="hero-buttons">
+            <a href="#discovery" class="btn btn-primary">Read the Theory</a>
+            <a href="#origins" class="btn btn-secondary">Knowledge Origin Theory</a>
+            <a href="#faq" class="btn btn-secondary">FAQ</a>
+          </div>
+          <div class="ledger-preview">
+            <div class="lp-cell"><span class="lp-num">FIG. 01</span><span class="lp-label">Visible / Invisible</span></div>
+            <div class="lp-cell"><span class="lp-num">FIG. 02</span><span class="lp-label">Two Systems</span></div>
+            <div class="lp-cell"><span class="lp-num">FIG. 03</span><span class="lp-label">Recognition Gap</span></div>
+            <div class="lp-cell"><span class="lp-num">FIG. 04</span><span class="lp-label">Four Origins</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE OPEN QUESTIONS -->
+  <section id="questions" aria-label="Open questions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Field Notes — Entry 00</span>
+        <h2>Questions the existing record doesn't answer</h2>
+        <p>Formal research accounting explains institutions well. It has far less to say about the knowledge that never enters one.</p>
+      </div>
+      <div class="q-grid reveal">
+        <div class="q-item"><span class="q-num">Q01</span><h3>Why do brilliant ideas often emerge outside universities?</h3></div>
+        <div class="q-item"><span class="q-num">Q02</span><h3>Why do many innovators lack academic affiliations?</h3></div>
+        <div class="q-item"><span class="q-num">Q03</span><h3>Why do useful discoveries remain undocumented?</h3></div>
+        <div class="q-item"><span class="q-num">Q04</span><h3>Why do some people solve complex problems without formal education?</h3></div>
+        <div class="q-item"><span class="q-num">Q05</span><h3>Why do practical solutions often appear before scientific explanations?</h3></div>
+        <div class="q-item"><span class="q-num">Q06</span><h3>Why does society reward credentials more readily than demonstrated insight?</h3></div>
+        <div class="q-item"><span class="q-num">Q07</span><h3>Why are millions of knowledge-generating acts never counted as research?</h3></div>
+        <div class="q-item"><span class="q-num">Q08</span><h3>If "research" means systematic inquiry, why does location of the inquiry decide whether it counts?</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY: VISIBLE vs INVISIBLE -->
+  <section id="discovery" aria-label="The discovery: visible and invisible research">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 01 — The Discovery</span>
+        <h2>Two ledgers of the same activity</h2>
+        <p>Invisible Research Theory (IRT) proposes that human knowledge production splits into two ledgers — one that gets filed, and one that doesn't. Most of it never gets filed.</p>
+      </div>
+      <div class="compare reveal">
+        <div class="compare-card filed">
+          <span class="stamp">Filed</span>
+          <h3>Visible Research</h3>
+          <p>Knowledge creation that becomes formally documented, published, measured, cited, and institutionally recognized.</p>
+          <ul>
+            <li>Peer-reviewed journals & conference proceedings</li>
+            <li>Patents and registered intellectual property</li>
+            <li>Institutional grants and funded projects</li>
+            <li>Academic citation networks</li>
+          </ul>
+        </div>
+        <div class="compare-card field">
+          <span class="stamp">Unfiled</span>
+          <h3>Invisible Research</h3>
+          <p>Knowledge created through observation, experimentation, adaptation, problem-solving, and lived experience — that stays undocumented, uncited, unrecognized.</p>
+          <ul>
+            <li>Lived experience and day-to-day adaptation</li>
+            <li>Grassroots and informal problem-solving</li>
+            <li>Undocumented experimentation and craft iteration</li>
+            <li>Tacit knowledge passed person to person</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORICAL EVIDENCE -->
+  <section id="history" aria-label="Historical evidence for invisible research">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 01b — Historical Evidence</span>
+        <h2>Historical evidence for Invisible Research</h2>
+        <p>Invisible Research is not a modern phenomenon. Throughout history, knowledge creation outside formal institutions has repeatedly produced discoveries that later reshaped entire fields.</p>
+      </div>
+      <div class="history-grid reveal">
+        <div class="history-card">
+          <span class="hc-era">1899–1903</span>
+          <h3>The Wright Brothers</h3>
+          <span class="hc-type">Independent experimentation in aerodynamics</span>
+          <p>Two bicycle mechanics with no formal engineering education conducted systematic wind tunnel tests, built their own instruments, and achieved powered flight before any university or government aerospace program existed.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> Only after successful demonstration did formal institutions begin studying aviation systematically.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">1831–1873</span>
+          <h3>Michael Faraday</h3>
+          <span class="hc-type">Self-taught experimental science</span>
+          <p>With only basic elementary education, Faraday discovered electromagnetic induction and established the foundations of electrochemistry through meticulous experimentation, later formulating laws that Maxwell would mathematically formalize.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> Institutional acceptance came decades after his initial discoveries, once formal mathematics caught up to his experimental insights.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">1913–1918</span>
+          <h3>Srinivasa Ramanujan</h3>
+          <span class="hc-type">Independent mathematical discovery</span>
+          <p>Working in isolation in India with no formal training in pure mathematics, Ramanujan independently compiled thousands of theorems, many of which were later proven correct by leading mathematicians at Cambridge and beyond.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> His work was initially dismissed, only gaining recognition after G.H. Hardy identified its extraordinary originality.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">1752–1790</span>
+          <h3>Benjamin Franklin</h3>
+          <span class="hc-type">Practical experimentation outside research structures</span>
+          <p>A printer and diplomat with no scientific training, Franklin conducted systematic experiments on electricity, invented the lightning rod, and mapped the Gulf Stream — all outside any formal research institution.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> His practical approach demonstrated that systematic inquiry could occur entirely outside the emerging university system.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">Millennia</span>
+          <h3>Indigenous Ecological Knowledge</h3>
+          <span class="hc-type">Generations of systematic observation</span>
+          <p>Indigenous communities worldwide developed sophisticated understanding of ecosystems, medicinal plants, weather patterns, and sustainable agriculture through millennia of careful observation, experimentation, and intergenerational knowledge transfer.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> Modern ecology is only beginning to formally acknowledge the depth and accuracy of this knowledge system.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">10,000+ years</span>
+          <h3>Traditional Agricultural Innovation</h3>
+          <span class="hc-type">Farmer-generated improvements</span>
+          <p>Every major crop in human history was developed by farmers selecting, breeding, and cultivating plants over generations — long before formal agricultural science existed. Terracing, irrigation, and crop rotation were all grassroots innovations.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> Formal agricultural science emerged only after these practices were already established and feeding civilizations.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">1983–Present</span>
+          <h3>Open Source Software Communities</h3>
+          <span class="hc-type">Decentralized collaborative knowledge creation</span>
+          <p>Linux, Apache, Python, and thousands of other foundational technologies were built by distributed communities of volunteers working outside traditional corporate R&D structures, creating some of the most widely used software in history.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> Corporate and academic institutions now rely on and contribute to these communities, but the model remains fundamentally decentralized.</div>
+        </div>
+        <div class="history-card">
+          <span class="hc-era">Ongoing</span>
+          <h3>Grassroots Engineering Innovations</h3>
+          <span class="hc-type">Local solutions by affected communities</span>
+          <p>From informal settlements developing water purification systems to farmers creating low-cost irrigation tools, communities facing problems directly often engineer practical solutions that formal institutions later study and scale.</p>
+          <div class="hc-support"><strong>Path to recognition:</strong> These innovations typically gain attention only after they have already proven effective in real-world conditions.</div>
+        </div>
+      </div>
+      <div class="marginalia reveal">
+        <div class="margin-line"><span class="ml-mark">→</span><p>These examples do not prove Invisible Research Theory. They illustrate the recurring existence of knowledge creation outside formal institutions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM CYCLE -->
+  <section id="ecosystem" aria-label="The invisible research ecosystem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 02 — The Cycle</span>
+        <h2>The invisible research ecosystem</h2>
+        <p>A loop that runs continuously among citizens, entrepreneurs, workers, artisans, parents, community leaders, and independent researchers — with or without anyone calling it "research."</p>
+      </div>
+      <div class="cycle-wrap reveal">
+        <div class="cycle-track">
+          <div class="cycle-step"><span class="cs-tag">01</span><h4>Observation</h4><p>Noticing a pattern, anomaly, or unmet need.</p></div>
+          <div class="cycle-step"><span class="cs-tag">02</span><h4>Experimentation</h4><p>Trying a fix, a workaround, a variation.</p></div>
+          <div class="cycle-step"><span class="cs-tag">03</span><h4>Problem Solving</h4><p>Refining the fix until it reliably works.</p></div>
+          <div class="cycle-step"><span class="cs-tag">04</span><h4>Knowledge Creation</h4><p>The working method becomes understanding.</p></div>
+          <div class="cycle-step"><span class="cs-tag">05</span><h4>Innovation</h4><p>The method spreads to others facing the same problem.</p></div>
+          <div class="cycle-step"><span class="cs-tag">06</span><h4>Societal Impact</h4><p>Communities, markets, or practices shift — quietly.</p></div>
+        </div>
+        <div class="cycle-loop-note">cycle repeats, unlogged, millions of times a day</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO SYSTEMS -->
+  <section id="framework" aria-label="Human Knowledge Ecosystem Theory">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 02b — Sub-theory</span>
+        <h2>Human Knowledge Ecosystem Theory</h2>
+        <p>Civilization runs on two interlocking knowledge systems. Each one is incomplete without the other.</p>
+      </div>
+      <div class="systems reveal">
+        <div class="system-col formal">
+          <span class="sub">Formal System</span>
+          <h3>Files, validates, scales</h3>
+          <ul>
+            <li>Universities</li>
+            <li>Research institutes</li>
+            <li>Journals & peer review</li>
+            <li>Laboratories</li>
+            <li>Funding bodies</li>
+          </ul>
+        </div>
+        <div class="system-mid" aria-hidden="true">
+          <div class="arrow">⇡</div>
+          <span class="label">two-way<br>flow</span>
+          <div class="arrow">⇣</div>
+        </div>
+        <div class="system-col informal">
+          <span class="sub">Informal System</span>
+          <h3>Observes, adapts, originates</h3>
+          <ul>
+            <li>Citizens & communities</li>
+            <li>Entrepreneurs & workers</li>
+            <li>Farmers & artisans</li>
+            <li>Independent researchers</li>
+            <li>Practitioners of every kind</li>
+          </ul>
+        </div>
+      </div>
+      <div class="synthesis reveal">
+        <p>The informal system supplies observations, needs, and rough solutions. The formal system tests, standardizes, and disseminates them. <strong>Neither reaches its full potential without the other.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOGNITION GAP -->
+  <section id="recognition" aria-label="Recognition Gap Theory">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 03 — Recognition Gap Theory</span>
+        <h2>The distance between value created and value acknowledged</h2>
+        <p>Across roles, the moment a contribution is <em style="color:var(--moss); font-style:italic;">made</em> and the moment it is <em style="color:var(--amber); font-style:italic;">acknowledged</em> rarely line up. The gap between them is where most invisible research lives.</p>
+      </div>
+
+      <div class="gap-meter reveal">
+        <div class="gap-row">
+          <span class="gap-name">Inventors</span>
+          <div class="gap-bar-bg"><div class="gap-bar created" style="width:92%"></div></div>
+        </div>
+        <div class="gap-row">
+          <span class="gap-name">— acknowledged</span>
+          <div class="gap-bar-bg"><div class="gap-bar ack" style="width:28%"></div></div>
+        </div>
+        <div class="gap-row" style="margin-top:1.25rem">
+          <span class="gap-name">Independent researchers</span>
+          <div class="gap-bar-bg"><div class="gap-bar created" style="width:85%"></div></div>
+        </div>
+        <div class="gap-row">
+          <span class="gap-name">— acknowledged</span>
+          <div class="gap-bar-bg"><div class="gap-bar ack" style="width:18%"></div></div>
+        </div>
+        <div class="gap-legend">
+          <span><i class="sw created"></i> value created</span>
+          <span><i class="sw ack"></i> value acknowledged</span>
+        </div>
+      </div>
+
+      <div class="gap-cases reveal">
+        <div class="gap-case"><span class="gc-icon">i.</span><h4>Inventors before recognition</h4><p>Years of iteration and quiet failure precede the "eureka" history records.</p></div>
+        <div class="gap-case"><span class="gc-icon">ii.</span><h4>Entrepreneurs before success</h4><p>Tacit market knowledge built long before any formal validation.</p></div>
+        <div class="gap-case"><span class="gc-icon">iii.</span><h4>Scientists before acceptance</h4><p>Paradigm-shifting ideas often face decades of institutional resistance.</p></div>
+        <div class="gap-case"><span class="gc-icon">iv.</span><h4>Artists before fame</h4><p>Cultural innovation frequently starts in marginalized or underground scenes.</p></div>
+        <div class="gap-case"><span class="gc-icon">v.</span><h4>Independent researchers before validation</h4><p>Rigorous, self-funded inquiry that lacks an institutional stamp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTELLIGENCE & EXPERTISE -->
+  <section id="intelligence" aria-label="Redefining intelligence and expertise">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 04 — Redefinitions</span>
+        <h2>Intelligence and expertise, re-measured</h2>
+        <p>Two working definitions IRT uses instead of the ones standardized testing and credentialing default to.</p>
+      </div>
+
+      <div class="split-cards reveal">
+        <div class="split-card old">
+          <span class="sc-label">Standard measure</span>
+          <p class="sc-def">Intelligence = academic reasoning ability, demonstrated through tests and formal logical deduction.</p>
+        </div>
+        <div class="split-card new">
+          <span class="sc-label">IRT working definition</span>
+          <p class="sc-def">Intelligence is the capacity to turn experience, information, and observation into useful decisions, predictions, solutions, adaptations, or creations.</p>
+        </div>
+      </div>
+
+      <div class="role-row reveal">
+        <span class="role-chip">Farmers — predictive ecological modeling from generations of observation</span>
+        <span class="role-chip">Mechanics — diagnostic reasoning without schematics</span>
+        <span class="role-chip">Parents — adaptive resource management under constraint</span>
+      </div>
+
+      <table class="ledger-table reveal">
+        <caption>Expertise vs. its neighbors — Fig. 04b</caption>
+        <thead>
+          <tr><th>Dimension</th><th>Self-acquired?</th><th>Requires institutional validation?</th><th>Guarantees outcomes?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Credentials</td><td class="mark-no">✕</td><td class="mark-yes">✓</td><td class="mark-no">✕</td></tr>
+          <tr><td>Knowledge</td><td class="mark-yes">✓</td><td class="mark-no">✕</td><td class="mark-no">✕</td></tr>
+          <tr><td>Capability</td><td class="mark-yes">✓</td><td class="mark-no">✕</td><td class="mark-partial">~</td></tr>
+          <tr><td>Expertise</td><td class="mark-yes">✓</td><td class="mark-no">✕</td><td class="mark-yes">✓ (in domain)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- KNOWLEDGE ORIGIN THEORY -->
+  <section id="origins" aria-label="Knowledge Origin Theory — the four sources">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 05 — Knowledge Origin Theory</span>
+        <h2>Every idea traces to one of four sources</h2>
+        <p>Whether filed or unfiled, all human knowledge originates from observation, experience, combination, or imagination — usually more than one at once.</p>
+      </div>
+      <div class="origin-grid reveal">
+        <div class="origin-card">
+          <span class="o-tag">SOURCE 01</span>
+          <h3>Observation</h3>
+          <p>Systematic noticing of patterns, anomalies, or behaviors in the environment. Forms the raw data behind every hypothesis.</p>
+          <p class="o-example">"The leaves turned three days early this year."</p>
+        </div>
+        <div class="origin-card">
+          <span class="o-tag">SOURCE 02</span>
+          <h3>Experience</h3>
+          <p>Direct, lived interaction with a system, building tacit understanding that raw data alone can't supply.</p>
+          <p class="o-example">A mechanic who can hear an engine misfire before any gauge moves.</p>
+        </div>
+        <div class="origin-card">
+          <span class="o-tag">SOURCE 03</span>
+          <h3>Combination</h3>
+          <p>Synthesizing existing, separate ideas into a new configuration. Drives most incremental and architectural innovation.</p>
+          <p class="o-example">Applying termite-mound ventilation principles to building design.</p>
+        </div>
+        <div class="origin-card">
+          <span class="o-tag">SOURCE 04</span>
+          <h3>Imagination</h3>
+          <p>Cognitive simulation of a system or solution that doesn't exist yet — the source of radical, paradigm-shifting breaks.</p>
+          <p class="o-example">Conceiving powered flight before aerodynamics was understood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS (MODIFIED - no numbers) -->
+  <section id="matters" aria-label="Why this framework matters">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 06 — Why It Matters</span>
+        <h2>What current accounting misses</h2>
+        <p>Innovation systems mostly track publications, patents, and institutional output. The gap is everything that never enters those systems.</p>
+      </div>
+      <div class="readings reveal">
+        <div class="reading-card">
+          <span class="rc-figure">Lost Knowledge</span>
+          <span class="rc-label">Insight that disappears with the person who held it, never built upon or transferred.</span>
+          <p class="rc-note">When practitioners retire or pass away without documentation, their accumulated understanding vanishes.</p>
+        </div>
+        <div class="reading-card">
+          <span class="rc-figure">Unrecognized Innovation</span>
+          <span class="rc-label">Working solutions that solve real problems and stop there, never scaled or studied.</span>
+          <p class="rc-note">Grassroots fixes that work locally but never enter formal innovation metrics.</p>
+        </div>
+        <div class="reading-card">
+          <span class="rc-figure">Tacit Expertise</span>
+          <span class="rc-label">Deep, reliable skill with no certificate to point to, gained through practice.</span>
+          <p class="rc-note">Craft knowledge that cannot be easily codified but produces consistent results.</p>
+        </div>
+        <div class="reading-card">
+          <span class="rc-figure">Community Intelligence</span>
+          <span class="rc-label">Collective problem-solving capacity that emerges from shared experience.</span>
+          <p class="rc-note">Groups developing sophisticated responses to challenges without formal coordination.</p>
+        </div>
+        <div class="reading-card">
+          <span class="rc-figure">Grassroots Discovery</span>
+          <span class="rc-label">Observations made by anyone paying attention, anywhere, anytime.</span>
+          <p class="rc-note">Citizen-generated insights that could inform formal research if captured.</p>
+        </div>
+        <div class="reading-card">
+          <span class="rc-figure">Practical Experimentation</span>
+          <span class="rc-label">Systematic trial and error in real-world conditions, not laboratories.</span>
+          <p class="rc-note">Field-tested solutions that work but lack controlled experimental validation.</p>
+        </div>
+      </div>
+
+      <div class="field-notes reveal">
+        <div class="field-note"><h4>Lost knowledge</h4><p>Insight that disappears with the person who held it, never built upon.</p></div>
+        <div class="field-note"><h4>Unrecognized innovation</h4><p>Working solutions that solve a real problem and stop there.</p></div>
+        <div class="field-note"><h4>Informal expertise</h4><p>Deep, reliable skill with no certificate to point to.</p></div>
+        <div class="field-note"><h4>Grassroots problem solving</h4><p>Fixes built by the people closest to the problem, for that reason.</p></div>
+        <div class="field-note"><h4>Citizen-generated insight</h4><p>Observations made by anyone paying attention, anywhere.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREQUENTLY OBSERVED PHENOMENA -->
+  <section id="phenomena" aria-label="Frequently observed phenomena explained by IRT">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 06b — Phenomena</span>
+        <h2>Frequently observed phenomena explained by IRT</h2>
+        <p>Connecting everyday observations to the framework's explanatory power.</p>
+      </div>
+      <table class="phenomena-table reveal">
+        <thead>
+          <tr><th>Observed Phenomenon</th><th>Possible IRT Explanation</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Useful ideas emerge outside academia</td><td>Informal systems observe problems directly and iterate solutions without institutional constraints.</td></tr>
+          <tr><td>Practical solutions appear before formal theories</td><td>Experience-based knowledge often precedes the theoretical frameworks that later explain it.</td></tr>
+          <tr><td>Expertise exists without credentials</td><td>Demonstrated reliability in solving problems is independent of formal validation processes.</td></tr>
+          <tr><td>Innovation begins at system edges</td><td>Those outside formal structures have fewer constraints and different vantage points.</td></tr>
+          <tr><td>Recognition lags contribution</td><td>Formal systems require time to validate what informal systems have already proven effective.</td></tr>
+          <tr><td>Communities solve problems before institutions</td><td>Proximity to the problem enables faster iteration and adaptation.</td></tr>
+          <tr><td>Some discoveries disappear</td><td>Without documentation or institutional support, knowledge dies with its holder.</td></tr>
+          <tr><td>Local knowledge is underestimated</td><td>Formal metrics cannot capture context-specific, tacit understanding.</td></tr>
+          <tr><td>Outsiders make breakthroughs</td><td>Lack of institutional assumptions allows novel combinations and approaches.</td></tr>
+          <tr><td>Some ideas gain recognition decades later</td><td>Formal systems eventually catch up to what informal practice already demonstrated.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- THE INVISIBLE RESEARCH TEST -->
+  <section id="test" aria-label="The Invisible Research Test">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 06c — Self-Assessment</span>
+        <h2>The Invisible Research Test</h2>
+        <p>A simple reflection on your own knowledge creation.</p>
+      </div>
+      <div class="test-checklist reveal">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Have you ever:</h3>
+        <ul class="test-list">
+          <li>Solved a recurring problem through trial and error?</li>
+          <li>Improved a process at work, home, or in your community?</li>
+          <li>Created a workaround when standard methods failed?</li>
+          <li>Learned something important through direct experimentation?</li>
+          <li>Developed a method that others later adopted?</li>
+          <li>Found a better way to do something everyone thought was fixed?</li>
+          <li>Adapted successfully to changing conditions through observation?</li>
+          <li>Shared your solution with others facing the same challenge?</li>
+          <li>Noticed a pattern others missed because of your experience?</li>
+          <li>Combined ideas from different areas to create something new?</li>
+        </ul>
+        <div class="test-reveal">
+          If you answered yes to several of these questions, you have likely participated in forms of Invisible Research. You have engaged in systematic observation, experimentation, and problem-solving that created knowledge — whether or not it was ever documented, cited, or formally recognized.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ORIGINAL -->
+  <section id="originality" aria-label="Why this framework is original">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 07 — On Originality</span>
+        <h2>What makes a framework new here</h2>
+        <p>Discussing independent researchers isn't new. What this framework adds is structure: naming, defining, and connecting the phenomenon so it can be discussed at all.</p>
+      </div>
+      <div class="original-list reveal">
+        <div class="original-item">
+          <span class="oi-num">i.</span>
+          <div><h4>Naming a previously undefined phenomenon</h4><p>Giving the gap between created and filed knowledge a name makes it discussable.</p></div>
+        </div>
+        <div class="original-item">
+          <span class="oi-num">ii.</span>
+          <div><h4>Defining it with conceptual rigor</h4><p>Drawing the boundary between "visible" and "invisible" research with working criteria.</p></div>
+        </div>
+        <div class="original-item">
+          <span class="oi-num">iii.</span>
+          <div><h4>Building a conceptual structure around it</h4><p>Connecting the ecosystem cycle, the two-systems model, and the recognition gap into one framework.</p></div>
+        </div>
+        <div class="original-item">
+          <span class="oi-num">iv.</span>
+          <div><h4>Proposing mechanisms for how it operates</h4><p>Describing how informal knowledge moves — or fails to move — into formal systems.</p></div>
+        </div>
+        <div class="original-item">
+          <span class="oi-num">v.</span>
+          <div><h4>Supplying language for previously isolated events</h4><p>A shared vocabulary for things that were each treated as one-off anecdotes before.</p></div>
+        </div>
+      </div>
+
+      <div class="marginalia reveal">
+        <div class="margin-line"><span class="ml-mark">→</span><p>What if humanity's largest research network <em>has no headquarters</em>?</p></div>
+        <div class="margin-line"><span class="ml-mark">→</span><p>What if innovation metrics capture <em>only a small fraction</em> of actual innovation?</p></div>
+        <div class="margin-line"><span class="ml-mark">→</span><p>What if millions of discoveries happen every day and <em>disappear without a trace</em>?</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPTUAL STATUS -->
+  <section id="status" aria-label="Conceptual status of the framework">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 07b — Conceptual Status</span>
+        <h2>Is this a theory, hypothesis, or framework?</h2>
+        <p>Intellectual honesty requires clarity about what this work is — and what it is not.</p>
+      </div>
+      <div class="split-cards reveal">
+        <div class="split-card old">
+          <span class="sc-label">What it is not</span>
+          <p class="sc-def">A fully validated, peer-reviewed scientific theory with predictive mathematical models and universal empirical confirmation.</p>
+        </div>
+        <div class="split-card new">
+          <span class="sc-label">What it is</span>
+          <p class="sc-def">A conceptual framework and descriptive theory that names, structures, and proposes explanations for a recurring historical phenomenon.</p>
+        </div>
+      </div>
+      <div class="field-notes reveal" style="margin-top: 2.5rem;">
+        <div class="field-note"><h4>What it attempts to explain</h4><p>The persistent existence of valuable knowledge creation outside formal institutions, and the systematic under-recognition of that knowledge.</p></div>
+        <div class="field-note"><h4>What would strengthen it</h4><p>Longitudinal studies of informal problem-solving, ethnographic fieldwork, development of workable metrics for "informal innovation," and cross-cultural validation.</p></div>
+        <div class="field-note"><h4>What could challenge it</h4><p>Evidence that informal knowledge creation is negligible compared to formal systems, or that the two systems are not meaningfully distinct.</p></div>
+        <div class="field-note"><h4>What future research is needed</h4><p>Quantitative proxies for invisible research volume, qualitative studies of knowledge flow between systems, and development of alternative innovation indicators.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIMITATIONS -->
+  <section id="limitations" aria-label="Limitations and open questions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 07c — Limitations</span>
+        <h2>Limitations and open questions</h2>
+        <p>Clarity about what this framework does not claim.</p>
+      </div>
+      <div class="marginalia reveal">
+        <div class="margin-line"><span class="ml-mark">✕</span><p>This framework does <em>not</em> claim that every person is equally knowledgeable or that every opinion constitutes research.</p></div>
+        <div class="margin-line"><span class="ml-mark">✕</span><p>It does <em>not</em> claim that academic methods are unnecessary or that formal validation should be abandoned.</p></div>
+        <div class="margin-line"><span class="ml-mark">✕</span><p>It does <em>not</em> claim that informal knowledge is always superior to formal knowledge.</p></div>
+        <div class="margin-line"><span class="ml-mark">✓</span><p>It <em>does</em> suggest that valuable knowledge creation may occur outside formal institutions and deserves systematic study.</p></div>
+        <div class="margin-line"><span class="ml-mark">✓</span><p>It <em>does</em> propose that the two systems are complementary rather than competitive.</p></div>
+        <div class="margin-line"><span class="ml-mark">✓</span><p>It <em>does</em> argue that current metrics and recognition systems have significant blind spots.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section id="applications" aria-label="Potential applications">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 08 — Where This Could Apply</span>
+        <h2>Potential applications</h2>
+        <p>If invisible research were tracked even loosely, these are the domains most likely to feel it first.</p>
+      </div>
+      <div class="app-grid reveal">
+        <div class="app-cell"><span class="ac-tag">EDU</span><h4>Education</h4><p>Valuing experiential and tacit learning alongside coursework.</p></div>
+        <div class="app-cell"><span class="ac-tag">RES</span><h4>Research</h4><p>Methodologies that pull in grassroots data and observation.</p></div>
+        <div class="app-cell"><span class="ac-tag">POL</span><h4>Innovation policy</h4><p>Funding decentralized, community-led R&D directly.</p></div>
+        <div class="app-cell"><span class="ac-tag">ECO</span><h4>Economic development</h4><p>Counting informal-sector innovation as a real driver of growth.</p></div>
+        <div class="app-cell"><span class="ac-tag">COM</span><h4>Communities</h4><p>Backing local problem-solving networks that already work.</p></div>
+        <div class="app-cell"><span class="ac-tag">ENT</span><h4>Entrepreneurship</h4><p>Treating founder intuition and market testing as valid evidence.</p></div>
+        <div class="app-cell"><span class="ac-tag">SCI</span><h4>Citizen science</h4><p>Structuring amateur observation into usable datasets.</p></div>
+        <div class="app-cell"><span class="ac-tag">KM</span><h4>Knowledge management</h4><p>Capturing the tacit expertise of retiring staff before it's gone.</p></div>
+        <div class="app-cell"><span class="ac-tag">GOV</span><h4>Governance</h4><p>Designing policy around informal community intelligence.</p></div>
+        <div class="app-cell"><span class="ac-tag">AI</span><h4>Artificial intelligence</h4><p>Training on non-institutional problem-solving patterns, not just text.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (EXPANDED TO 40+) -->
+  <section id="faq" aria-label="Frequently asked questions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 09 — FAQ</span>
+        <h2>Frequently asked questions</h2>
+        <p>Short, direct answers to the questions this framework raises most often.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is Invisible Research Theory?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>A framework proposing that a large, parallel system of knowledge creation happens outside formal institutions — through lived experience, experimentation, and problem-solving — and stays mostly undocumented and unrecognized.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is every person a "researcher" under IRT?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Functionally, yes. Anyone who systematically observes, tries something, and adjusts based on the outcome is doing the basic mechanics of research, whatever they call it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can research happen without an academic institution?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Research is a method of inquiry, not a location. Independent scholars, artisans, and practitioners have produced real discoveries outside academia throughout history.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Where do ideas come from, according to IRT?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Knowledge Origin Theory traces every idea to observation, experience, combination of existing concepts, or imagination — often several at once.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is Recognition Gap Theory?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>The idea that there's a measurable distance between the value someone creates and the value society formally acknowledges — and that this gap is where most invisible research sits.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can someone be an expert without a degree?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. IRT defines expertise as demonstrated reliability in solving a specific class of problems — proven by outcomes, not certificates.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Does this framework replace academic research?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>No. IRT argues the two systems are complementary. Formal research gives validation, rigor, and scale; informal research gives raw, contextual, fast-moving insight.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How is invisible research different from citizen science?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Citizen science usually feeds data into formal institutional projects. Invisible research is self-directed and may never touch a formal institution at all.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why has this phenomenon stayed undefined for so long?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>It's decentralized, undocumented, and has no body advocating for it — and current metrics and funding are tied to formal outputs only.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What would strengthen this theory going forward?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Longitudinal studies of informal problem-solving, ethnographic fieldwork outside institutions, and the development of workable "informal innovation" metrics.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can someone be a researcher without a PhD?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. A PhD is one path to research training, but systematic inquiry can be learned and practiced through many routes. History is full of transformative researchers without doctoral degrees.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can lived experience create knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Absolutely. Lived experience is a primary source of tacit knowledge — deep understanding that comes from direct engagement with a system over time, often impossible to gain from books alone.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is tacit knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Knowledge that is difficult to transfer to another person by writing it down or verbalizing it. It's gained through personal experience and practice — like knowing how to ride a bike or diagnose an engine by sound.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is practical intelligence?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>The ability to solve real-world problems effectively, often in contexts where formal knowledge is incomplete or unavailable. It combines observation, adaptation, and resourcefulness.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why do some highly educated people fail while some less educated people succeed?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Success often depends on practical problem-solving, adaptation, and execution — skills that formal education may not fully develop. Context, opportunity, and tacit knowledge matter as much as credentials.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why do outsiders sometimes make breakthroughs?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Outsiders lack institutional assumptions and constraints. They bring different perspectives, ask different questions, and are free to combine ideas in ways insiders might not consider.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why are some discoveries ignored?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Discoveries from outside formal systems often lack the credentials, networks, or documentation that make them legible to institutions. Recognition bias favors established sources.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is the difference between research and innovation?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Research is systematic inquiry to create new knowledge. Innovation is the application of that knowledge to create value. Research can lead to innovation, but not all research innovates, and not all innovation requires formal research.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is the difference between knowledge and information?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Information is data or facts. Knowledge is information that has been processed, contextualized, and integrated with experience. You can have information without knowledge, but not knowledge without information.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is the difference between expertise and credentials?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Credentials are formal certifications of training. Expertise is demonstrated capability to solve problems reliably. They often overlap, but not always — you can have one without the other.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why are credentials easier to measure than capability?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Credentials are standardized, documented, and institutionally verified. Capability is contextual, variable, and must be demonstrated in practice — which is harder to measure at scale.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why does society overlook informal expertise?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Because it's undocumented, decentralized, and lacks institutional backing. Our recognition systems are designed to validate formal credentials, not informal capability.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can entrepreneurship be a form of research?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Entrepreneurs systematically observe markets, test hypotheses through prototypes, iterate based on feedback, and create new knowledge about customer needs and business models.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can parenting generate research-like knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Parents observe child development, experiment with approaches, adapt to individual needs, and build deep tacit knowledge about human behavior — all through systematic inquiry.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can communities create knowledge collectively?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Communities develop shared understanding through collective observation, discussion, and problem-solving. This social knowledge often exceeds what any individual member knows.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What role does observation play in discovery?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Observation is the foundation. Every hypothesis begins with noticing something — a pattern, anomaly, or unmet need. Systematic observation is the first step of all research, formal or informal.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do innovations spread?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Through networks of practice — people observing others' solutions, adapting them to their own contexts, and sharing what works. Formal dissemination is just one channel among many.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why do some ideas gain recognition only decades later?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Formal systems take time to validate what informal practice has already proven. Paradigm shifts require generational change, and institutional resistance can delay recognition for decades.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is recognition bias?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>The tendency to value knowledge from established sources more highly than knowledge from unknown or informal sources, regardless of its actual merit or validity.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does invisible research affect economic development?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Informal innovation drives significant economic activity, especially in developing economies. Recognizing and supporting it could unlock substantial productivity gains and inclusive growth.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can governments use this framework?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Governments could design policies that recognize informal innovation, support community-led R&D, and create bridges between formal and informal knowledge systems.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can schools use this framework?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Schools could value experiential learning, recognize tacit knowledge, and teach students to see themselves as capable knowledge creators, not just consumers.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can businesses use this framework?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Businesses could better capture employee tacit knowledge, recognize informal innovation, and create cultures that value practical problem-solving alongside formal credentials.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does this relate to citizen science?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Citizen science is a bridge between informal and formal systems. IRT is broader — it includes all knowledge creation outside institutions, whether or not it connects to formal science.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does this relate to independent research?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Independent research is a subset of invisible research. IRT includes all informal knowledge creation, while independent research specifically refers to systematic inquiry outside institutions.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can invisible research be measured?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>It's challenging but not impossible. Proxies include community innovation surveys, ethnographic studies, oral history projects, and analysis of informal knowledge networks.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What evidence supports the theory?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Historical case studies, ethnographic research on informal innovation, studies of tacit knowledge, and the persistent existence of breakthrough discoveries from outside formal systems.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What evidence would challenge the theory?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Evidence that informal knowledge creation is negligible, that formal and informal systems are not meaningfully distinct, or that the recognition gap is smaller than proposed.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What are the limitations of the framework?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>It's currently conceptual rather than empirically validated. It doesn't claim all informal knowledge is valuable, and it acknowledges that formal systems play essential roles in validation and scaling.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why might future researchers study this idea?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Because understanding the full spectrum of human knowledge creation could lead to better innovation policies, more inclusive recognition systems, and more effective bridges between formal and informal knowledge.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO QUESTIONS -->
+  <section id="seo-questions" aria-label="Questions people frequently ask">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 09b — Search Questions</span>
+        <h2>Questions people frequently ask</h2>
+        <p>Common search queries about research, expertise, and knowledge creation.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can anyone be a researcher?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Research is a method of systematic inquiry, not a credential. Anyone who observes, questions, experiments, and draws conclusions is engaging in research, regardless of institutional affiliation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you do research without a degree?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Absolutely. Many of history's greatest discoveries were made by people without formal degrees. Research requires curiosity, rigor, and systematic method — not institutional credentials.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is experience a form of knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Yes. Experience generates tacit knowledge — deep understanding that comes from direct engagement with a system. This knowledge is often more practical and contextually rich than theoretical knowledge alone.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why do people without degrees become successful?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Success often depends on practical problem-solving, adaptability, and execution — skills that can be developed through experience. Context, opportunity, and tacit knowledge matter as much as formal education.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why are some inventors not scientists?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Invention often comes from practical problem-solving and tinkering, not formal scientific training. Inventors focus on creating working solutions, while scientists focus on understanding underlying principles.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can practical knowledge be more valuable than academic knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>In many contexts, yes. Practical knowledge is tested in real-world conditions and often more immediately applicable. The most effective approaches usually combine both practical and academic knowledge.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Where do ideas come from?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>According to Knowledge Origin Theory, ideas come from observation, experience, combination of existing concepts, or imagination — usually multiple sources working together.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is the source of innovation?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Innovation comes from identifying problems, experimenting with solutions, and iterating based on feedback. It can occur in formal institutions or informal settings — often both.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What is tacit knowledge?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Tacit knowledge is understanding gained through experience that is difficult to articulate or transfer. Examples include riding a bike, diagnosing problems by intuition, or mastering a craft through practice.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What makes someone an expert?<span class="fq-mark">+</span></button>
+          <div class="faq-a"><p>Expertise is demonstrated reliability in solving a specific class of problems. It comes from sustained practice, observation, and learning — not just from credentials or formal training.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE RESEARCH (EXPANDED) -->
+  <section id="future" aria-label="Future research directions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag">Fig. 10 — Open Threads</span>
+        <h2>Future research directions</h2>
+        <p>An agenda for taking IRT from conceptual framework toward something measurable.</p>
+      </div>
+      <div class="roadmap reveal">
+        <div class="road-item"><span class="ri-tag">MEASURE</span><div><h4>Measuring invisible research</h4><p>Quantitative proxies and qualitative methods for the volume and impact of undocumented knowledge creation.</p></div></div>
+        <div class="road-item"><span class="ri-tag">METRIC</span><div><h4>Recognition gap metrics</h4><p>Indices that capture the disparity between informal value generation and formal acknowledgment.</p></div></div>
+        <div class="road-item"><span class="ri-tag">FLOW</span><div><h4>Knowledge flow analysis</h4><p>Mapping how tacit, informal knowledge eventually reaches and reshapes formal institutions.</p></div></div>
+        <div class="road-item"><span class="ri-tag">NETWORK</span><div><h4>Citizen innovation systems</h4><p>Studying decentralized grassroots problem-solving for patterns that could be supported deliberately.</p></div></div>
+        <div class="road-item"><span class="ri-tag">INDEX</span><div><h4>Alternative innovation indicators</h4><p>Economic and social metrics that don't depend on patents or publications.</p></div></div>
+        <div class="road-item"><span class="ri-tag">COMMUNITY</span><div><h4>Community innovation metrics</h4><p>Methods for assessing the innovative capacity and output of local, informal knowledge networks.</p></div></div>
+        <div class="road-item"><span class="ri-tag">MAP</span><div><h4>Informal expertise mapping</h4><p>Identifying and documenting tacit expertise within communities before it is lost.</p></div></div>
+        <div class="road-item"><span class="ri-tag">STUDY</span><div><h4>Knowledge flow studies</h4><p>Longitudinal research tracking how informal discoveries eventually enter formal systems.</p></div></div>
+        <div class="road-item"><span class="ri-tag">SYSTEM</span><div><h4>Decentralized innovation systems</h4><p>Designing frameworks for supporting distributed, community-led research and development.</p></div></div>
+        <div class="road-item"><span class="ri-tag">NETWORK</span><div><h4>Grassroots discovery networks</h4><p>Building platforms for connecting informal researchers and amplifying their findings.</p></div></div>
+        <div class="road-item"><span class="ri-tag">REGISTRY</span><div><h4>Citizen knowledge registries</h4><p>Creating accessible databases for documenting informal innovations and local knowledge.</p></div></div>
+        <div class="road-item"><span class="ri-tag">TRANSFER</span><div><h4>Informal-to-formal knowledge transfer models</h4><p>Developing protocols for translating tacit, contextual knowledge into formal research formats.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section id="conclusion" aria-label="The central question">
+    <div class="wrap">
+      <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+        <span class="tag">Fig. 11 — The Central Question</span>
+        <h2>A question for further thought</h2>
+      </div>
+      <div class="marginalia reveal">
+        <div class="margin-line"><span class="ml-mark">→</span><p>Perhaps the most important question raised by Invisible Research Theory is not whether invisible research exists.</p></div>
+        <div class="margin-line"><span class="ml-mark">→</span><p>The historical record suggests that it does.</p></div>
+        <div class="margin-line"><span class="ml-mark">→</span><p>The deeper question is whether humanity has developed adequate ways to recognize, measure, preserve, and learn from the vast quantities of knowledge created outside formal systems.</p></div>
+        <div class="margin-line"><span class="ml-mark">→</span><p>If not, then humanity may be overlooking one of its largest sources of innovation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR -->
+  <section id="author" aria-label="About the author">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:0; text-align:center; margin-left:auto; margin-right:auto;">
+        <span class="tag">Fig. 12 — Field Researcher</span>
+        <h2>About the author</h2>
+      </div>
+      <div class="author-card reveal">
+        <div class="author-mark">KC</div>
+        <h3>Kallol Chakrabarti</h3>
+        <span class="role">Independent Researcher</span>
+        <p>Dedicated to mapping the unseen architectures of human knowledge creation — a sustained attempt to name and structure decentralized, undocumented intellectual labor.</p>
+        <div class="author-works">
+          <span>The Kallol Taxonomy of Research & Innovation</span>
+          <span>Invisible Research Theory</span>
+          <span>Human Knowledge Ecosystem Theory</span>
+          <span>Recognition Gap Theory</span>
+          <span>Knowledge Origin Theory</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Theory</h4>
+        <ul>
+          <li><a href="#discovery">Visible vs Invisible Research</a></li>
+          <li><a href="#framework">Human Knowledge Ecosystem</a></li>
+          <li><a href="#recognition">Recognition Gap Theory</a></li>
+          <li><a href="#origins">Knowledge Origin Theory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#ecosystem">The Research Cycle</a></li>
+          <li><a href="#intelligence">Intelligence &amp; Expertise</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#future">Future Research</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reference</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#author">About the Author</a></li>
+          <li><a href="https://helixoriginator.github.io/Global-Framework-for-Independent-Researchers-The-Kallol-Taxonomy-of-Research-and-Innovation/">The Kallol Taxonomy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Status</h4>
+        <ul>
+          <li>Conceptual framework</li>
+          <li>Open for academic discussion</li>
+          <li>Open for collaboration</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Invisible Research Theory (IRT) — a conceptual framework for understanding knowledge creation outside formal institutions.</p>
+      <p style="opacity:0.6; font-family:var(--mono); font-size:0.75rem;">&copy; 2026. All rights reserved.</p>
+      <p class="footer-credit">Created by Kallol Chakrabarti, Global Independent Researcher</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('active'); obs.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ obs.observe(el); });
+})();
+
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ links.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+})();
+
+(function(){
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var ans = item.querySelector('.faq-a');
+    if(!btn || !ans) return;
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        if(o !== item){ o.classList.remove('open'); o.querySelector('.faq-q').setAttribute('aria-expanded','false'); o.querySelector('.faq-a').style.maxHeight = null; }
+      });
+      if(isOpen){
+        item.classList.remove('open'); btn.setAttribute('aria-expanded','false'); ans.style.maxHeight = null;
+      } else {
+        item.classList.add('open'); btn.setAttribute('aria-expanded','true'); ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
