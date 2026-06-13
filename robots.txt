@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://helixoriginator.github.io/invisible-research-theory-human-knowledge-ecosystem/sitemap.xml
